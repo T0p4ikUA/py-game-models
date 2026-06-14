@@ -34,8 +34,8 @@ def main() -> None:
                     if skill_name:
                         Skill.objects.get_or_create(
                             name=skill_name,
-                            defaults={"bonus": skill_item.get("bonus", "")},
-                            race=race_obj
+                            race=race_obj,
+                            defaults={"bonus": skill_item.get("bonus", "")}
                         )
 
         guild_data = player_data.get("guild")
