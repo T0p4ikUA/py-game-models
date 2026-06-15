@@ -1,4 +1,3 @@
-import init_django_orm  # noqa: F401
 import json
 
 from db.models import Race, Skill, Player, Guild
@@ -59,4 +58,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    import init_django_orm  # noqa: F401
     main()
