@@ -1,4 +1,4 @@
-django
+django>=6.0,<7.0
 flake8
 flake8-annotations
 flake8-quotes
